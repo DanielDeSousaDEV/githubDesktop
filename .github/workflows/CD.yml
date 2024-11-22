@@ -17,3 +17,8 @@ jobs:
               uses: JamesIves/github-pages-deploy-action@v4.6.9
               with:
                   folder: src 
+
+            - name: Deploy_Certo
+              uses: peaceiris/actions-gh-pages@v4
+              with: 
+                publish_dir: ./public
