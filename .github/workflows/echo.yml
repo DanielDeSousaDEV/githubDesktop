@@ -1,5 +1,4 @@
 name: Echo
-run-name: ${{github.actor}} está testando o Github Actions
 on: [push]
 jobs:
   Explorando-o-github-actions:
