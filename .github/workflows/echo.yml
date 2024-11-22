@@ -10,7 +10,7 @@ jobs:
       - run: echo "teste de echo foi eexcutado pela branch ${{github.ref}} e o erpositorio foi ${{github.repository}}"
       - name: checando o seu repositorio
         uses: actions/checkout@v4
-      - run: "o repositorio ${{github.repository}} foi clonado com sucesso"
+      - run: echo "o repositorio ${{github.repository}} foi clonado com sucesso"
       - name: Ls do Codigo
         run: ls ${{github.workspace}}
       - run: echo "o status desse workflow foi ${{job.status}}"
