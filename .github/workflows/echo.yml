@@ -1,0 +1,16 @@
+name: Echo
+run-name: ${{github.actor}} está testando o Github Actions
+on: [push]
+jobs:
+  Explorando-o-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "teste de echo e foi ativado pelo gatilho ${{github.event_name}}"
+      - run: echo "teste de echo e foi executado em ${{runner.os}}"
+      - run: echo "teste de echo foi eexcutado pela branch ${{github.ref}} e o erpositorio foi ${{github.repository}}"
+      - name: checando o seu repositorio
+        uses: actions/checkout@v4
+      - run: "o repositorio ${{github.repository}} foi clonado com sucesso"
+      - name: Ls do Codigo
+        run: ls ${{github.workspace}}
+      - run: echo "o status desse workflow foi ${{job.status}}"
