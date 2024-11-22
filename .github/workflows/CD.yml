@@ -4,13 +4,15 @@ on:
     push: 
         branches: 
             - main
+permissions: 
+    contents: write
 jobs:
     Continuos_Deploy:
         runs-on: ubuntu-latest
         steps:
             - name: Check_Page
               uses: actions/checkout@v4
-              
+
             - name: Deploy_Page
               uses: JamesIves/github-pages-deploy-action@v4.6.9
               with:
