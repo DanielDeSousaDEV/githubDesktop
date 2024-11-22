@@ -8,7 +8,7 @@ jobs:
     steps:
         - run: echo "ado a"
         - name: checar_o_codigo
-          uses: actions/checkout@v3
+          uses: actions/checkout@v4
         - name: pegar_o_valor_depois_de_-pr#
           run: |
             PR_TITLE="${{ github.event.pull_request.title }}"
