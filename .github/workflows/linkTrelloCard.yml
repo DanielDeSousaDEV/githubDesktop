@@ -1,0 +1,8 @@
+name: Linkar Cartão
+run-name: Linkar Cartão
+on: [pull_request]
+jobs:
+  Link-Trello-Card:
+    runs-on: ubuntu-latest
+    steps:
+        - run: echo "ado"
