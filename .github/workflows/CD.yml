@@ -8,4 +8,7 @@ jobs:
     Continuos_Deploy:
         runs-on: ubuntu-latest
         steps:
-            - run: echo "deploy"
+            - name: Deploy_Page
+              uses: JamesIves/github-pages-deploy-action@v4.6.9
+              with:
+                  folder: src 
