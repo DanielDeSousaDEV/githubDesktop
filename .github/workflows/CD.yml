@@ -1,0 +1,11 @@
+name: CD
+run-name: Continuos Deploy
+on: 
+    push: 
+        branches: 
+            - main
+jobs:
+    Continuos_Deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "deploy"
