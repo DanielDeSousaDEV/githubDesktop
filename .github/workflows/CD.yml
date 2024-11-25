@@ -9,6 +9,9 @@ permissions:
 jobs:
     Continuos_Deploy:
         runs-on: ubuntu-latest
+        permissions: 
+          pages: write
+          id-token: write
         steps:
             - name: Check_Page
               uses: actions/checkout@v4
@@ -18,7 +21,12 @@ jobs:
               with:
                   folder: src 
 
-            - name: Deploy_Certo
-              uses: peaceiris/actions-gh-pages@v4
-              with: 
-                publish_dir: ./public
+            # - name: Deploy_Certo
+            #   uses: peaceiris/actions-gh-pages@v4
+            #   with: 
+            #     #falta o token // MÃO TEM A CERTIFICAÇÃO
+            #     publish_dir: ./public
+            - name: Deploy_Mais_Certo
+              uses: actions/deploy-pages@v4.0.5
+              with:
+                  token: ${{github.token}}
