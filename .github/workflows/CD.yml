@@ -9,7 +9,7 @@ permissions:
 jobs:
     Build:
       runs-on: ubuntu-latest
-      # permissions: 
+      # permissions:  
       steps:
         - name: Upload_Do_Aterfato
           # id: build
