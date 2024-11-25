@@ -23,6 +23,9 @@ jobs:
     Deploy:
         runs-on: ubuntu-latest
         needs: Build
+        environment: 
+          name: github-pages
+          url: ${{ steps.deployment.outputs.page_url }}
         permissions: 
           pages: write
           id-token: write
@@ -44,4 +47,3 @@ jobs:
               uses: actions/deploy-pages@v4.0.5
               with:
                   token: ${{github.token}}
-                  timeout: 30.000
