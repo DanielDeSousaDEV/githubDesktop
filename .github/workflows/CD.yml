@@ -4,9 +4,12 @@ on:
     push: 
         branches: 
             - main
+
 permissions: 
     contents: write
+
 jobs:
+    #Trabalho
     Build:
       runs-on: ubuntu-latest
       steps:
@@ -14,7 +17,6 @@ jobs:
           uses: actions/checkout@v4
         
         - name: Upload_Do_Aterfato
-          # id: build
           uses: actions/upload-pages-artifact@v3
           with: 
             path: src/
@@ -31,16 +33,6 @@ jobs:
         steps:
             - name: Check_Page
               uses: actions/checkout@v4
-
-            # - name: Deploy_Page
-            #   uses: JamesIves/github-pages-deploy-action@v4.6.9
-            #   with:
-            #       folder: src
-            # - name: Deploy_Certo
-            #   uses: peaceiris/actions-gh-pages@v4
-            #   with: 
-            #     #falta o token // MÃO TEM A CERTIFICAÇÃO 
-            #     publish_dir: ./public   
 
             - name: Deploy_Mais_Certo
               id: deployment
