@@ -37,3 +37,4 @@ jobs:
             github-include-pr-comments: false
             github-enable-related-keyword-prefix: true
             # github-require-trello-card: true #talvez isso procure somente links
+            # o sistema de reconhecimento de id é horrivel
