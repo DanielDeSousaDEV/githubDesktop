@@ -11,6 +11,9 @@ jobs:
       runs-on: ubuntu-latest
       # permissions:  
       steps:
+        - name: Check_Page
+          uses: actions/checkout@v4
+        
         - name: Upload_Do_Aterfato
           # id: build
           uses: actions/upload-pages-artifact@v3
