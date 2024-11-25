@@ -18,7 +18,7 @@ jobs:
         #        echo "tc_number=not_found" >> $GITHUB_ENV
         #     fi
         # - name: printar_o_valor_em_outro_step
-        #   run: echo "o valor que foi enviado é $tc_number" 
+        #   run: echo "o valor que foi enviado é $tc_number"  
         - name: link_card
           uses: rematocorp/trello-integration-action@v9.8.3
           with:
