@@ -9,6 +9,8 @@ permissions:
 jobs:
     Build:
       runs-on: ubuntu-latest
+      permissions: 
+        w
       steps:
         - name: Upload_Do_Aterfato
           # id: build
@@ -34,7 +36,7 @@ jobs:
             # - name: Deploy_Certo
             #   uses: peaceiris/actions-gh-pages@v4
             #   with: 
-            #     #falta o token // MÃO TEM A CERTIFICAÇÃO
+            #     #falta o token // MÃO TEM A CERTIFICAÇÃO 
             #     publish_dir: ./public  
 
             - name: Deploy_Mais_Certo
