@@ -9,9 +9,6 @@ permissions:
 jobs:
     Build:
       runs-on: ubuntu-latest
-      environment: 
-        name: ado
-        url: https://google.com
       steps:
         - name: Check_Page
           uses: actions/checkout@v4
