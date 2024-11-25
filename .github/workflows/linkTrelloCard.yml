@@ -35,3 +35,4 @@ jobs:
             trello-auth-token: ${{ secrets.TRELLO_AUTH_TOKEN }}
             github-include-pr-branch-name: true
             github-include-pr-comments: false
+            github-enable-related-keyword-prefix: true
