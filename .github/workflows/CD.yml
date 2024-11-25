@@ -26,6 +26,13 @@ jobs:
             #   with: 
             #     #falta o token // MÃO TEM A CERTIFICAÇÃO
             #     publish_dir: ./public  
+            
+            - name: Upload_Do_Aterfato
+              # id: build
+              uses: actions/upload-pages-artifact@v3
+              with: 
+                path: src/
+
             - name: Deploy_Mais_Certo
               uses: actions/deploy-pages@v4.0.5
               with:
