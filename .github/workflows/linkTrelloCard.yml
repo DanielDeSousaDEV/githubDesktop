@@ -6,6 +6,10 @@ on:
       - opened
       - reopened
 
+permissions: 
+  pull-requests: 
+    write
+
 jobs:
   Link-Trello-Card:
     runs-on: ubuntu-latest
@@ -29,3 +33,5 @@ jobs:
             github-token: ${{github.token}}
             trello-api-key: ${{ secrets.TRELLO_API_KEY }}
             trello-auth-token: ${{ secrets.TRELLO_AUTH_TOKEN }}
+            github-include-pr-branch-name: true
+            github-include-pr-comments: false
