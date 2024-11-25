@@ -1,7 +1,11 @@
 name: Linkar Cartão
 run-name: Linkar Cartão
 on: 
-    pull_request
+  pull_request: 
+    types: 
+      - opened
+      - reopened
+
 jobs:
   Link-Trello-Card:
     runs-on: ubuntu-latest
