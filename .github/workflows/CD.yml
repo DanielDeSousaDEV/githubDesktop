@@ -16,10 +16,10 @@ jobs:
             - name: Check_Page
               uses: actions/checkout@v4
 
-            - name: Deploy_Page
-              uses: JamesIves/github-pages-deploy-action@v4.6.9
-              with:
-                  folder: src
+            # - name: Deploy_Page
+            #   uses: JamesIves/github-pages-deploy-action@v4.6.9
+            #   with:
+            #       folder: src
 
             # - name: Deploy_Certo
             #   uses: peaceiris/actions-gh-pages@v4
