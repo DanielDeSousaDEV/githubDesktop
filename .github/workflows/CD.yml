@@ -9,8 +9,7 @@ permissions:
 jobs:
     Build:
       runs-on: ubuntu-latest
-      permissions: 
-        w
+      # permissions: 
       steps:
         - name: Upload_Do_Aterfato
           # id: build
@@ -32,7 +31,6 @@ jobs:
             #   uses: JamesIves/github-pages-deploy-action@v4.6.9
             #   with:
             #       folder: src
-
             # - name: Deploy_Certo
             #   uses: peaceiris/actions-gh-pages@v4
             #   with: 
