@@ -25,7 +25,7 @@ jobs:
             #   uses: peaceiris/actions-gh-pages@v4
             #   with: 
             #     #falta o token // MÃO TEM A CERTIFICAÇÃO
-            #     publish_dir: ./public
+            #     publish_dir: ./public 
             - name: Deploy_Mais_Certo
               uses: actions/deploy-pages@v4.0.5
               with:
