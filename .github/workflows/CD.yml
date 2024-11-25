@@ -44,6 +44,7 @@ jobs:
             #     publish_dir: ./public   
 
             - name: Deploy_Mais_Certo
+              id: deployment
               uses: actions/deploy-pages@v4.0.5
               with:
                   token: ${{github.token}}
