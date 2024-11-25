@@ -19,7 +19,7 @@ jobs:
             - name: Deploy_Page
               uses: JamesIves/github-pages-deploy-action@v4.6.9
               with:
-                  folder: src 
+                  folder: src
 
             # - name: Deploy_Certo
             #   uses: peaceiris/actions-gh-pages@v4
@@ -30,3 +30,4 @@ jobs:
               uses: actions/deploy-pages@v4.0.5
               with:
                   token: ${{github.token}}
+                  artifact_name: gh-pages
