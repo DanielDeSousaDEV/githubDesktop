@@ -36,3 +36,4 @@ jobs:
             github-include-pr-branch-name: true
             github-include-pr-comments: false
             github-enable-related-keyword-prefix: true
+            github-require-trello-card: true
